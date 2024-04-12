@@ -11,3 +11,42 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: ventes de boissons énergisantes
 Text Domain: Planty
 */
+
+/* formulaire commandes*/
+id wpcf7-f161-p11-o1 {
+    font-family: ;
+}
+
+.wp-container-core-columns-is-layout-1 {
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+/*quantités*/
+.quantite-boissons {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+
+/*informations clients*/
+
+.information-livraison {
+    width: 860px;
+    display: flex;
+    flex-direction: row
+}
+
+.info {
+    color: white;
+}
+
+.title-information-livraison {
+    display: flex;
+    justify-content: center;
+    font-size: 23;
+    margin-bottom: 5px;
+}
