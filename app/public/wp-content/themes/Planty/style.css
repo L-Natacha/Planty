@@ -11,26 +11,99 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: ventes de boissons énergisantes
 Text Domain: Planty
 */
-
-/* formulaire commandes*/
-id wpcf7-f161-p11-o1 {
-    font-family: ;
+/*superposition images page accueil*/
+.wp-image-28 {
+    position: relative;
+    top: 100px;
+    left: 245px;
+    z-index: 1;
 }
 
-.wp-container-core-columns-is-layout-1 {
-    flex-wrap: wrap;
+.wp-image-37 {
+    position: relative;
+    z-index: 3;
+}
+
+.wp-image-27 {
+    position: relative;
+    top: 95px;
+    right: 220px;
+    z-index: 2;
+}
+
+/* deplacer images page de contact*/
+
+.wp-image-26 {
+    position: relative;
+    top: 50px;
+    left: 150px;
+}
+
+.wp-image-69 {
+    position: relative;
+    right: 160px;
+    bottom: 150px;
+}
+
+.wp-image-29 {
+    z-index: 1;
+    position: relative;
+    right: 95px;
+    bottom: 200px;
+}
+
+/* formulaire contact*/
+
+
+
+#wpcf7-f159-p10-o1 {
+    position: relative;
+    z-index: 2;
+}
+
+input.wpcf7-form-control,
+textarea.wpcf7-form-control {
+    width: 80%;
+    max-width: 300px;
+    display: flex;
     justify-content: center;
+}
+
+input.wpcf7-submit {
+    display: block;
+    margin: 0 auto;
+    background-color: #DC9F96;
+}
+
+/* image bas de page*/
+.wp-image-21 {
+    width: 100%;
+}
+
+/* formulaire commandes*/
+.wpcf7-f161-p11-o1 {
+    font-style: "Syne";
+}
+
+.wp-container-core-column-is-layout-5.wp-container-core-column-is-layout-5> :where(:not(.alignleft):not(.alignright):not(.alignfull)) .wp-container-core-columns-is-layout-1 {
+    display: flex;
+    justify-content: space-around;
 
 }
 
 /*quantités*/
 .quantite-boissons {
+    flex-wrap: nowrap;
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
-    
+
 }
 
-
+.quantite {
+    display: flex;
+    flex-direction: row;
+}
 
 /*informations clients*/
 
