@@ -11,6 +11,24 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: ventes de boissons énergisantes
 Text Domain: Planty
 */
+
+/*separateur page accueil et nous rencontrer*/
+.bloc-accueil-images {
+    position: relative;
+    background: #ECE2DA;
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+
+}
+
+.bloc-nous-rencontrer {
+    position: relative;
+    background: #ECE2DA;
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+
+}
+
 /*superposition images page accueil*/
 .wp-image-28 {
     position: relative;
@@ -35,8 +53,8 @@ Text Domain: Planty
 
 .wp-image-26 {
     position: relative;
-    top: 50px;
-    left: 150px;
+    top: 60px;
+    left: 160px;
 }
 
 .wp-image-69 {
@@ -48,8 +66,8 @@ Text Domain: Planty
 .wp-image-29 {
     z-index: 1;
     position: relative;
-    right: 95px;
-    bottom: 200px;
+    left: 360px;
+    bottom: 250px;
 }
 
 /* formulaire contact*/
@@ -59,20 +77,24 @@ Text Domain: Planty
 #wpcf7-f159-p10-o1 {
     position: relative;
     z-index: 2;
+    display: flex;
+    justify-content: center;
 }
 
 input.wpcf7-form-control,
 textarea.wpcf7-form-control {
-    width: 80%;
+    width: 100%;
     max-width: 300px;
     display: flex;
     justify-content: center;
 }
 
 input.wpcf7-submit {
+    width: 50%;
     display: block;
     margin: 0 auto;
     background-color: #DC9F96;
+
 }
 
 /* image bas de page*/
@@ -83,26 +105,47 @@ input.wpcf7-submit {
 /* formulaire commandes*/
 .wpcf7-f161-p11-o1 {
     font-style: "Syne";
-}
-
-.wp-container-core-column-is-layout-5.wp-container-core-column-is-layout-5> :where(:not(.alignleft):not(.alignright):not(.alignfull)) .wp-container-core-columns-is-layout-1 {
     display: flex;
-    justify-content: space-around;
 
 }
+
+
 
 /*quantités*/
+
 .quantite-boissons {
-    flex-wrap: nowrap;
-    justify-content: space-between;
     display: flex;
-    flex-direction: row;
+    gap: 30px;
 
 }
 
 .quantite {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+}
+
+.quantite input.submit-ok {
+    margin: 0 auto;
+}
+
+.quantite input[type="number"] {
+    width: 60px;
+    padding-right: 30px;
+    /* Espace pour les flèches */
+    background-image: url('fleche-droite.png');
+    /* Image de la flèche droite */
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 30px;
+    /* Taille de l'image de la flèche */
+}
+
+.bouton-commander {
+
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #DC9F96
 }
 
 /*informations clients*/
