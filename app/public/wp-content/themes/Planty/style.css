@@ -70,6 +70,10 @@ Text Domain: Planty
     bottom: 250px;
 }
 
+.wp-block-buttons {
+    width: 40%;
+}
+
 /* formulaire contact*/
 
 
@@ -103,7 +107,7 @@ input.wpcf7-submit {
 }
 
 /* formulaire commandes*/
-.wpcf7-f161-p11-o1 {
+#wpcf7-f161-p11-o1 {
     font-style: "Syne";
     display: flex;
 
@@ -120,49 +124,51 @@ input.wpcf7-submit {
 }
 
 .quantite {
-    display: flex;
-    justify-content: center;
-}
 
-.quantite input.submit-ok {
     margin: 0 auto;
 }
 
-.quantite input[type="number"] {
-    width: 60px;
-    padding-right: 30px;
-    /* Espace pour les flèches */
-    background-image: url('fleche-droite.png');
-    /* Image de la flèche droite */
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 30px;
-    /* Taille de l'image de la flèche */
-}
-
-.bouton-commander {
-
+.wpcf7 .quantite-boissons .choix-quantite {
+    width: 50px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    background-color: #DC9F96
+    padding: auto;
 }
+
 
 /*informations clients*/
 
-.information-livraison {
-    width: 860px;
+.bloc-information-livraison {
     display: flex;
-    flex-direction: row
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.column {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information-livraison {
+
+    padding: 10px;
+
 }
 
 .info {
     color: white;
+    display: flex;
+
 }
 
-.title-information-livraison {
-    display: flex;
-    justify-content: center;
-    font-size: 23;
-    margin-bottom: 5px;
+.separation {
+    width: 2px;
+    background-color: white;
+
+    margin: 0 20px;
 }
