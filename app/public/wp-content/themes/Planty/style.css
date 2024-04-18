@@ -31,23 +31,31 @@ Text Domain: Planty
 
 /*superposition images page accueil*/
 .wp-image-28 {
+
     position: relative;
-    top: 100px;
-    left: 245px;
+    top: 125px;
+    left: 247px;
     z-index: 1;
 }
 
 .wp-image-37 {
+
     position: relative;
     z-index: 3;
 }
 
 .wp-image-27 {
+
     position: relative;
-    top: 95px;
+    top: 120px;
     right: 220px;
     z-index: 2;
 }
+
+
+
+
+
 
 /* deplacer images page de contact*/
 
@@ -171,4 +179,41 @@ input.wpcf7-submit {
     background-color: white;
 
     margin: 0 20px;
+}
+
+/* header*/
+
+#menu-item-16 {
+    float: left;
+}
+
+.page_admin a {
+    display: inline-block;
+    margin-top: 27px;
+    text-align: center;
+    color: black;
+
+}
+
+.page_admin a:hover {
+    background-color: #dc9f96;
+    color: white;
+}
+
+#menu-item-17 {
+    float: right;
+}
+
+/* media queries */
+
+@media screen and (min-width: 200px) and (max-width: 1024px) {
+    .bloc-accueil-images {
+        width:
+            100%;
+    }
+}
+
+
+.wp-block-buttons {
+    width: 100%;
 }

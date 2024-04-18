@@ -11,16 +11,11 @@ function theme_enqueue_styles()
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 
 /* affichage Navigation  */
-
-function ajouter_element_menu_principal($items, $args)
+function ajouter_page_admin($items, $args)
 {
-    // Vérifier si le menu actuel est le menu principal
-    if ($args->theme_location == 'Primary Menu') {
-        // Ajouter votre élément supplémentaire ici
-        $element_supplementaire = '<li><a href="#">Élément supplémentaire</a></li>';
-        // Ajouter l'élément supplémentaire à la fin du menu
-        $items .= $element_supplementaire;
+    if (is_user_logged_in()) {
+        $items .= '<li class="page_admin"> <a href="http://planty.local/wp-admin/">Admin</a> </li>';
     }
     return $items;
 }
-add_filter('wp_nav_menu_items', 'ajouter_element_menu_principal', 10, 2);
+add_filter('wp_nav_menu_items', 'ajouter_page_admin', 10, 2);
