@@ -11,6 +11,24 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: ventes de boissons énergisantes
 Text Domain: Planty
 */
+/* header*/
+
+#menu-item-16 {
+    order: 1;
+}
+
+#menu-item-17 {
+    order: 3;
+
+}
+
+.menu_item_admin {
+    order: 2;
+}
+
+.menu-link:hover {
+    font-weight: 600;
+}
 
 /*separateur page accueil et nous rencontrer*/
 .bloc-accueil-images {
@@ -52,7 +70,11 @@ Text Domain: Planty
     z-index: 2;
 }
 
+/* bouton page d'accueil */
 
+a.bouton-commander:hover {
+    background-color: #C02E44;
+}
 
 
 
@@ -78,7 +100,7 @@ Text Domain: Planty
     bottom: 250px;
 }
 
-.wp-block-buttons {
+.wp-block-buttons>.wp-block-button.wp-block-button__width-25 {
     width: 40%;
 }
 
@@ -109,6 +131,16 @@ input.wpcf7-submit {
 
 }
 
+.column {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
 /* image bas de page*/
 .wp-image-21 {
     width: 100%;
@@ -120,8 +152,6 @@ input.wpcf7-submit {
     display: flex;
 
 }
-
-
 
 /*quantités*/
 
@@ -137,13 +167,22 @@ input.wpcf7-submit {
 }
 
 .wpcf7 .quantite-boissons .choix-quantite {
-    width: 50px;
+    width: 39px;
+    height: 56px;
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    padding: auto;
+    border-radius: 0;
+    margin-top: 15px;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+
 }
 
+.choix-quantite {
+    display: flex;
+    justify-content: center;
+}
 
 /*informations clients*/
 
@@ -154,13 +193,6 @@ input.wpcf7-submit {
     padding: 0;
 }
 
-.column {
-    width: 100%;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .information-livraison {
 
@@ -181,28 +213,6 @@ input.wpcf7-submit {
     margin: 0 20px;
 }
 
-/* header*/
-
-#menu-item-16 {
-    float: left;
-}
-
-.page_admin a {
-    display: inline-block;
-    margin-top: 27px;
-    text-align: center;
-    color: black;
-
-}
-
-.page_admin a:hover {
-    background-color: #dc9f96;
-    color: white;
-}
-
-#menu-item-17 {
-    float: right;
-}
 
 /* media queries */
 

@@ -14,7 +14,7 @@ add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 function ajouter_page_admin($items, $args)
 {
     if (is_user_logged_in()) {
-        $items .= '<li class="page_admin"> <a href="http://planty.local/wp-admin/">Admin</a> </li>';
+        $items .= '<li id="menu_item_admin "class="menu-item menu-item-type-post_type menu-item-object-page menu_item_admin""> <a href="http://planty.local/wp-admin/" class="menu-link">Admin</a> </li>';
     }
     return $items;
 }
