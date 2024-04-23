@@ -49,24 +49,25 @@ Text Domain: Planty
 
 /*superposition images page accueil*/
 .wp-image-28 {
-
+    width: 100%;
     position: relative;
-    top: 125px;
-    left: 247px;
+    top: 20%;
+    left: 58%;
     z-index: 1;
 }
 
 .wp-image-37 {
-
+    width: 100%;
     position: relative;
     z-index: 3;
+    top: 30%;
 }
 
 .wp-image-27 {
-
+    width: 100%;
     position: relative;
-    top: 120px;
-    right: 220px;
+    top: 5%;
+    right: 59%;
     z-index: 2;
 }
 
@@ -82,18 +83,21 @@ a.bouton-commander:hover {
 /* deplacer images page de contact*/
 
 .wp-image-26 {
+    width: 100%;
     position: relative;
     top: 60px;
     left: 160px;
 }
 
 .wp-image-69 {
+    width: 100%;
     position: relative;
     right: 160px;
     bottom: 150px;
 }
 
 .wp-image-29 {
+    width: 100%;
     z-index: 1;
     position: relative;
     left: 360px;
@@ -109,6 +113,7 @@ a.bouton-commander:hover {
 
 
 #wpcf7-f159-p10-o1 {
+    width: 100%;
     position: relative;
     z-index: 2;
     display: flex;
@@ -179,30 +184,36 @@ input.wpcf7-submit {
 
 }
 
-.choix-quantite {
-    display: flex;
-    justify-content: center;
-}
+
 
 /*informations clients*/
 
 .bloc-information-livraison {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
+    justify-content: center;
 }
 
 
-.information-livraison {
+.column-information {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
 
-    padding: 10px;
+.column-livraison {
+    width: 100%;
+    display: flex;
+}
+
+input.info {
+    width: 100%;
 
 }
 
 .info {
     color: white;
-    display: flex;
 
 }
 
@@ -213,6 +224,10 @@ input.wpcf7-submit {
     margin: 0 20px;
 }
 
+input.wpcf7-submit {
+    width: 15%;
+    border-radius: 5px;
+}
 
 /* media queries */
 
@@ -226,4 +241,20 @@ input.wpcf7-submit {
 
 .wp-block-buttons {
     width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wp-image-69 {
+    width: 50%;
+    position: relative;
+    right: 160px;
+    bottom: 150px;
+}
+
+h1 {
+    font-size: 25px
 }
