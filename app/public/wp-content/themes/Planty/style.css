@@ -179,7 +179,6 @@ input.wpcf7-submit {
     margin: 0 auto;
     border-radius: 0;
     margin-top: 15px;
-    font-size: 16px;
     font-family: "Inter", sans-serif;
 
 }
@@ -236,25 +235,36 @@ input.wpcf7-submit {
         width:
             100%;
     }
-}
 
 
-.wp-block-buttons {
-    width: 100%;
-}
+    #menu-item-16 {
+        order: 1;
+    }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
+    #menu-item-17 {
+        order: 3;
 
-.wp-image-69 {
-    width: 50%;
-    position: relative;
-    right: 160px;
-    bottom: 150px;
-}
+    }
 
-h1 {
-    font-size: 25px
+    .menu_item_admin {
+        order: 2;
+    }
+
+    .wp-block-buttons {
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .wp-image-69 {
+        width: 50%;
+        position: relative;
+        right: 160px;
+        bottom: 150px;
+    }
+
+
 }
