@@ -83,30 +83,27 @@ a.bouton-commander:hover {
 /* deplacer images page de contact*/
 
 .wp-image-26 {
-    width: 100%;
+    width: 80vw;
     position: relative;
-    top: 60px;
-    left: 160px;
+    top: 5vh;
+    left: 15vw;
 }
 
 .wp-image-69 {
-    width: 100%;
+    width: 80vw;
     position: relative;
-    right: 160px;
-    bottom: 150px;
+    right: 9vw;
+    bottom: 21vh;
 }
 
 .wp-image-29 {
-    width: 100%;
     z-index: 1;
     position: relative;
-    left: 360px;
-    bottom: 250px;
+    left: 16vw;
+    bottom: 25vh;
 }
 
-.wp-block-buttons>.wp-block-button.wp-block-button__width-25 {
-    width: 40%;
-}
+
 
 /* formulaire contact*/
 
@@ -123,13 +120,12 @@ a.bouton-commander:hover {
 input.wpcf7-form-control,
 textarea.wpcf7-form-control {
     width: 100%;
-    max-width: 300px;
     display: flex;
     justify-content: center;
 }
 
 input.wpcf7-submit {
-    width: 50%;
+    width: 100%;
     display: block;
     margin: 0 auto;
     background-color: #E0B9B4;
@@ -260,11 +256,14 @@ input.wpcf7-submit {
     }
 
     .wp-image-69 {
-        width: 50%;
-        position: relative;
-        right: 160px;
-        bottom: 150px;
+        width: 100%
     }
 
+    .wp-image-26 {
+        width: 100%;
+    }
 
+    .wp-image-21 {
+        width: 100%;
+    }
 }
