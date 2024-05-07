@@ -117,15 +117,15 @@ a.bouton-commander:hover {
     justify-content: center;
 }
 
-input.wpcf7-form-control,
+
 textarea.wpcf7-form-control {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-input.wpcf7-submit {
-    width: 100%;
+.bouton-envoyer {
+    width: 30%;
     display: block;
     margin: 0 auto;
     background-color: #E0B9B4;
@@ -202,11 +202,6 @@ input.wpcf7-submit {
     display: flex;
 }
 
-input.info {
-    width: 100%;
-
-}
-
 .info {
     color: white;
 
@@ -219,20 +214,22 @@ input.info {
     margin: 0 20px;
 }
 
-input.wpcf7-submit {
+input.bouton-commander {
     width: 15%;
     border-radius: 5px;
+    display: block;
+    margin: 0 auto;
 }
 
 /* media queries */
 
 @media screen and (min-width: 200px) and (max-width: 1024px) {
     .bloc-accueil-images {
-        width:
-            100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
-
+    /* menu header*/
     #menu-item-16 {
         order: 1;
     }
@@ -246,24 +243,43 @@ input.wpcf7-submit {
         order: 2;
     }
 
-    .wp-block-buttons {
-        width: 100%;
+    /* accueil*/
+    .wp-image-28 {
+        left: 50%;
+        top: 15%;
     }
 
-    img {
-        max-width: 100%;
-        height: auto;
+    .wp-image-37 {
+        top: 25%;
+    }
+
+    .wp-image-27 {
+        right: 50%;
+        top: 2%;
+    }
+
+
+    /*nous rencontrer*/
+
+    .wp-image-26 {
+        width: 90vw;
+        left: -3vw;
+        top: 5vh;
     }
 
     .wp-image-69 {
-        width: 100%
+        width: 50%;
+        right: -6vw;
+        bottom: 30vh;
     }
 
-    .wp-image-26 {
-        width: 100%;
+    .wp-image-29 {
+        left: -5vw;
+        bottom: 30vh;
     }
 
-    .wp-image-21 {
-        width: 100%;
+    /*commander*/
+    input.wpcf7-submit {
+        width: 30%;
     }
 }
