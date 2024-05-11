@@ -85,15 +85,16 @@ a.bouton-commander:hover {
 .wp-image-26 {
     width: 80vw;
     position: relative;
-    top: 5vh;
-    left: 15vw;
+    top: 6vh;
+    left: 8vw;
 }
 
 .wp-image-69 {
-    width: 80vw;
+    max-width: 100;
+    height: auto;
     position: relative;
     right: 9vw;
-    bottom: 21vh;
+    bottom: 18vh;
 }
 
 .wp-image-29 {
