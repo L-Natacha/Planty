@@ -71,6 +71,7 @@ Text Domain: Planty
     z-index: 2;
 }
 
+
 /* bouton page d'accueil */
 
 a.bouton-commander:hover {
@@ -83,14 +84,14 @@ a.bouton-commander:hover {
 /* deplacer images page de contact*/
 
 .wp-image-26 {
-    width: 80vw;
+    width: 145px;
     position: relative;
     top: 6vh;
     left: 8vw;
 }
 
 .wp-image-69 {
-    max-width: 100;
+    width: 191px;
     height: auto;
     position: relative;
     right: 9vw;
@@ -98,10 +99,11 @@ a.bouton-commander:hover {
 }
 
 .wp-image-29 {
+    width: 147px;
     z-index: 1;
     position: relative;
-    left: 16vw;
-    bottom: 25vh;
+    left: 17vw;
+    bottom: 23vh;
 }
 
 
@@ -224,30 +226,13 @@ input.bouton-commander {
 
 /* media queries */
 
-@media screen and (min-width: 200px) and (max-width: 1024px) {
-    .bloc-accueil-images {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-    }
+@media (max-width: 375px) and (max-width: 767px) {
 
-    /* menu header*/
-    #menu-item-16 {
-        order: 1;
-    }
-
-    #menu-item-17 {
-        order: 3;
-
-    }
-
-    .menu_item_admin {
-        order: 2;
-    }
 
     /* accueil*/
     .wp-image-28 {
-        left: 50%;
-        top: 15%;
+        left: 67%;
+        top: 35%;
     }
 
     .wp-image-37 {
@@ -255,32 +240,138 @@ input.bouton-commander {
     }
 
     .wp-image-27 {
-        right: 50%;
-        top: 2%;
+        right: 70%;
+        top: 7%;
     }
 
+    /* images avis clients */
+    .wp-image-34 {
+        width: 30%;
+    }
+
+    .wp-image-32 {
+        width: 30%;
+    }
+
+    .wp-image-33 {
+        width: 30%;
+    }
 
     /*nous rencontrer*/
 
     .wp-image-26 {
-        width: 90vw;
-        left: -3vw;
+        width: 20%;
+        position: relative;
+        height: auto;
+        left: -5vw;
         top: 5vh;
     }
 
     .wp-image-69 {
-        width: 50%;
-        right: -6vw;
-        bottom: 30vh;
+        width: 30%;
+        position: relative;
+        right: -60vw;
+        bottom: 10vh;
     }
 
     .wp-image-29 {
-        left: -5vw;
-        bottom: 30vh;
+        width: 30%;
+        position: relative;
+        left: -4vw;
+        bottom: 24vh;
+    }
+
+    #wpcf7-f159-p10-o1 {
+        width: 80%;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bouton-envoyer {
+        width: 30%;
     }
 
     /*commander*/
+
+
+    .quantite-boissons {
+        display: grid;
+    }
+
+    .quantite {
+        width: 40%;
+    }
+
+    h2 {
+        font-size: 11px;
+    }
+
+    h2.title-vos-information {
+        font-size: 11px;
+    }
+
+    .info {
+        font-size: 9px;
+
+    }
+
+    .column-livraison {
+        width: 100%;
+        display: flex;
+    }
+
     input.wpcf7-submit {
+        width: 40%;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1024px) {
+
+    /* images avis clients */
+    .wp-image-34 {
+        width: 40%;
+    }
+
+    .wp-image-32 {
+        width: 40%;
+    }
+
+    .wp-image-33 {
+        width: 40%;
+    }
+
+    /*nous rencontrer*/
+
+    .wp-image-26 {
+        width: 15%;
+        height: auto;
+        left: 0vw;
+        top: 5vh;
+    }
+
+    .wp-image-69 {
+        width: 30%;
+        right: -30vw;
+        bottom: 10vh;
+    }
+
+    .wp-image-29 {
+        width: 20%;
+        left: 17vw;
+        bottom: 25vh;
+    }
+
+    #wpcf7-f159-p10-o1 {
+        width: 80%;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .bouton-envoyer {
         width: 30%;
     }
 }
