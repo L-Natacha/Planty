@@ -226,7 +226,7 @@ input.bouton-commander {
 
 /* media queries */
 
-@media (max-width: 375px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
 
 
     /* accueil*/
@@ -257,7 +257,12 @@ input.bouton-commander {
         width: 30%;
     }
 
+
     /*nous rencontrer*/
+
+    .bloc-nous-rencontrer {
+        position: relative;
+    }
 
     .wp-image-26 {
         width: 20%;
@@ -267,6 +272,10 @@ input.bouton-commander {
         top: 5vh;
     }
 
+    .bloc-equipe {
+        position: relative;
+    }
+
     .wp-image-69 {
         width: 30%;
         position: relative;
@@ -274,11 +283,8 @@ input.bouton-commander {
         bottom: 10vh;
     }
 
-    .wp-image-29 {
-        width: 30%;
-        position: relative;
-        left: -4vw;
-        bottom: 24vh;
+    .bloc-nous-contacter {
+        position: relative
     }
 
     #wpcf7-f159-p10-o1 {
@@ -289,8 +295,21 @@ input.bouton-commander {
         justify-content: center;
     }
 
+    .wp-image-29 {
+        width: 30%;
+        position: relative;
+        left: -4vw;
+        bottom: 24vh;
+    }
+
+
+
     .bouton-envoyer {
         width: 30%;
+    }
+
+    .image-bas-de-page {
+        width: 100%;
     }
 
     /*commander*/
@@ -344,27 +363,41 @@ input.bouton-commander {
 
     /*nous rencontrer*/
 
+    .bloc-nous-rencontrer {
+        position: relative;
+    }
+
     .wp-image-26 {
         width: 15%;
-        height: auto;
+        position: relative;
         left: 0vw;
         top: 5vh;
     }
 
+    .bloc-equipe {
+        position: relative;
+    }
+
     .wp-image-69 {
-        width: 30%;
-        right: -30vw;
-        bottom: 10vh;
+        width: 35%;
+        position: relative;
+        right: -80%;
+        bottom: 0;
+
+    }
+
+    .bloc-nous-contacter {
+        position: relative;
     }
 
     .wp-image-29 {
-        width: 20%;
-        left: 17vw;
-        bottom: 25vh;
+        width: 19%;
+        position: relative;
+        left: 15%;
     }
 
     #wpcf7-f159-p10-o1 {
-        width: 80%;
+        width: 70%;
         position: relative;
         z-index: 2;
         display: flex;
