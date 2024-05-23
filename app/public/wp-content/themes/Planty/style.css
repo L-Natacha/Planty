@@ -42,8 +42,8 @@ Text Domain: Planty
 .bloc-nous-rencontrer {
     position: relative;
     background: #ECE2DA;
-    border-bottom-left-radius: 50% 10%;
-    border-bottom-right-radius: 50% 10%;
+    border-bottom-left-radius: 70% 30%;
+    border-bottom-right-radius: 70% 30%;
 
 }
 
@@ -78,9 +78,6 @@ a.bouton-commander:hover {
     background-color: #C02E44;
 }
 
-
-
-
 /* deplacer images page de contact*/
 
 .wp-image-26 {
@@ -90,32 +87,48 @@ a.bouton-commander:hover {
     left: 8vw;
 }
 
-.wp-image-69 {
+.bloc-equipe {
+    height: auto;
+    width: 80%;
+
+}
+
+
+.photo-sylvie {
+    position: relative;
+}
+
+.feuille-equipe {
     width: 191px;
     height: auto;
     position: relative;
-    right: 9vw;
-    bottom: 18vh;
+    left: 39%;
+    bottom: 215PX
 }
 
-.wp-image-29 {
+/* bloc formulaire de contact et image */
+
+.bloc-formulaire-image {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.deco-houe {
     width: 147px;
-    z-index: 1;
+    height: auto;
     position: relative;
-    left: 17vw;
-    bottom: 23vh;
+    left: 28%;
+    top: 144px;
 }
-
-
 
 /* formulaire contact*/
-
-
-
 #wpcf7-f159-p10-o1 {
-    width: 100%;
+    width: 70%;
     position: relative;
-    z-index: 2;
     display: flex;
     justify-content: center;
 }
@@ -226,8 +239,12 @@ input.bouton-commander {
 
 /* media queries */
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 781px) {
 
+    /*logo*/
+    .ast-mobile-header-logo {
+        width: 60%;
+    }
 
     /* accueil*/
     .wp-image-28 {
@@ -246,15 +263,15 @@ input.bouton-commander {
 
     /* images avis clients */
     .wp-image-34 {
-        width: 30%;
+        width: 20%;
     }
 
     .wp-image-32 {
-        width: 30%;
+        width: 20%;
     }
 
     .wp-image-33 {
-        width: 30%;
+        width: 20%;
     }
 
 
@@ -273,36 +290,42 @@ input.bouton-commander {
     }
 
     .bloc-equipe {
+        height: auto;
+        width: 50%;
+    }
+
+    .photo-sylvie {
         position: relative;
     }
 
-    .wp-image-69 {
-        width: 30%;
+    .feuille-equipe {
+        width: 20%;
+        height: auto;
         position: relative;
-        right: -60vw;
-        bottom: 10vh;
+        left: 24%;
+        bottom: 188px;
     }
 
-    .bloc-nous-contacter {
-        position: relative
+    .bloc-formulaire-image {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 
+    .deco-houe {
+        position: relative;
+        left: 20%;
+        top: 153px;
+    }
+
+    /* formulaire contact*/
     #wpcf7-f159-p10-o1 {
-        width: 80%;
         position: relative;
-        z-index: 2;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
-
-    .wp-image-29 {
-        width: 30%;
-        position: relative;
-        left: -4vw;
-        bottom: 24vh;
-    }
-
-
 
     .bouton-envoyer {
         width: 30%;
@@ -327,12 +350,12 @@ input.bouton-commander {
         font-size: 11px;
     }
 
-    h2.title-vos-information {
-        font-size: 11px;
+    h2.title-vos-information .title-livraison {
+        font-size: 24px;
     }
 
     .info {
-        font-size: 9px;
+        font-size: 18px;
 
     }
 
@@ -346,7 +369,12 @@ input.bouton-commander {
     }
 }
 
-@media (min-width: 768px) and (max-width:1024px) {
+@media (min-width: 781px) and (max-width: 1200px) {
+
+    /*logo*/
+    .ast-mobile-header-logo {
+        width: 60%;
+    }
 
     /* images avis clients */
     .wp-image-34 {
@@ -359,6 +387,19 @@ input.bouton-commander {
 
     .wp-image-33 {
         width: 40%;
+    }
+
+    /* images avis clients */
+    .wp-image-34 {
+        width: 50%;
+    }
+
+    .wp-image-32 {
+        width: 50%;
+    }
+
+    .wp-image-33 {
+        width: 50%;
     }
 
     /*nous rencontrer*/
@@ -375,36 +416,40 @@ input.bouton-commander {
     }
 
     .bloc-equipe {
+        height: auto;
+        width: 80%;
+    }
+
+
+    .photo-sylvie {
         position: relative;
     }
 
-    .wp-image-69 {
-        width: 35%;
+    .feuille-equipe {
+        width: 15%;
+        height: auto;
         position: relative;
-        right: -80%;
-        bottom: 0;
-
+        left: 47%;
+        bottom: 196px;
     }
 
-    .bloc-nous-contacter {
+
+    .deco-houe {
+        width: 15%;
+        height: auto;
         position: relative;
+        left: 23%;
+        top: 142px;
     }
 
-    .wp-image-29 {
-        width: 19%;
-        position: relative;
-        left: 15%;
-    }
-
+    /* formulaire contact*/
     #wpcf7-f159-p10-o1 {
-        width: 70%;
+        width: 100%;
+        height: auto;
         position: relative;
-        z-index: 2;
         display: flex;
         justify-content: center;
-    }
 
-    .bouton-envoyer {
-        width: 30%;
+
     }
 }
