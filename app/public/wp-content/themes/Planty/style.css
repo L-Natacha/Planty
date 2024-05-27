@@ -165,7 +165,7 @@ textarea.wpcf7-form-control {
 
 /* formulaire commandes*/
 #wpcf7-f161-p11-o1 {
-    font-style: "Syne";
+    font-style: "Syne", sans-serif;
     display: flex;
 
 }
